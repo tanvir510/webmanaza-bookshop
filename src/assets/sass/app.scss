@@ -1,0 +1,14 @@
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+// Variables
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "global";
+@import "product";
+
+// Components
+@import "components";
+@import "pages";

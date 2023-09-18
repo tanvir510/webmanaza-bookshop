@@ -1,0 +1,100 @@
+/* components/Sidebar.module.scss */
+
+.sidebar {
+  position: fixed;
+  left: -2550px; /* Initially hide the sidebar to the left */
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background: $white;
+  transition: all ease-in-out 0.5s;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+  &.open {
+    left: 0;
+  }
+
+  /* Position the close button in the top right corner */
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .sidebar-back {
+    padding: 20px;
+    font-size: 18px;
+    color: #222;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 0px;
+    cursor: pointer;
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+.toggleButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+
+  li {
+    position: relative;
+  }
+
+  .has-submenu {
+    position: relative;
+    i {
+      position: absolute;
+      right: 5%;
+      font-size: 13px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 7px 35px;
+    position: relative;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.07em;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.submenu {
+  display: none;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+  position: absolute;
+  width: 230px;
+  padding: 15px 0px;
+  top: 0;
+  left: 100%; /* Position the submenu to the right of the parent */
+  background: $white;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}

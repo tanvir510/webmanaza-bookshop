@@ -1,0 +1,40 @@
+.category_section {
+  background-color: #f1f5f4;
+  .categroy_item {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .item-layer,
+      .item-layer-effect {
+        opacity: 1;
+        visibility: visible;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      .content {
+        opacity: 1;
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      transition: $transition;
+      opacity: 0;
+
+      .title {
+        font-size: 20px;
+        font-weight: 600;
+        color: $white;
+        cursor: pointer;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

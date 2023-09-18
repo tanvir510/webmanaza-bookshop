@@ -1,0 +1,187 @@
+.header_top {
+  background-color: #f8f8f8;
+  .header_support {
+    color: $gray;
+    font-size: 14px;
+    font-weight: 400;
+
+    a {
+      color: $gray;
+      text-decoration: none;
+      padding: 8px 0px;
+    }
+    li {
+      i {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .header_dropdown {
+    .dropdown_menu {
+      position: relative;
+
+      a {
+        color: $gray;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 8px 0px;
+        display: block;
+
+        i {
+          font-size: 12px;
+          margin-right: 4px;
+          &.down_carret {
+            font-size: 11px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      &:hover {
+        .custom_dropdown {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+
+    .custom_dropdown {
+      top: 5px;
+      position: absolute;
+      z-index: 10;
+      background-color: #fff;
+      transition: all linear 0.3s;
+      min-width: 160px;
+      text-align: left;
+      -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1607843137);
+      -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1607843137);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1607843137);
+      transform: translateY(30px);
+      opacity: 0;
+      visibility: hidden;
+      right: 0;
+      padding: 15px;
+      border-radius: 0 !important;
+
+      a {
+        color: $gray;
+        font-size: 14px;
+        font-weight: 400;
+        padding: 3px 0px;
+      }
+    }
+  }
+}
+
+.header_nav {
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.05);
+  i {
+    color: $tertiary;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $tertiary;
+  }
+
+  .left_nav {
+    i {
+      font-size: 20px;
+    }
+    li {
+      a {
+        padding: 10px 0px;
+        display: block;
+      }
+    }
+  }
+
+  .right_nav {
+    li {
+      cursor: pointer;
+      position: relative;
+      .cart_number {
+        position: absolute;
+        background: $primary;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 11px;
+        font-weight: 600;
+        top: 0px;
+        right: 0px;
+        padding: 3px;
+      }
+      a {
+        padding: 5px 10px;
+        display: block;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.header_mobile {
+  .cart_action {
+    .cart_number {
+      position: absolute;
+      background: $primary;
+      width: 16px;
+      height: 16px;
+      color: #fff;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 11px;
+      line-height: 11px;
+      font-weight: 600;
+      top: 0px;
+      right: 0px;
+      padding: 3px;
+    }
+  }
+
+  a {
+    padding: 3px 10px;
+    display: block;
+    font-weight: 300;
+  }
+}
+
+.is-sticky {
+  background: $white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
