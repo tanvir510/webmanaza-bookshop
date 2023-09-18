@@ -7,19 +7,6 @@ import parse from "html-react-parser";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-interface ImageInfo {
-  url: string;
-  alt: string;
-}
-
-const images: ImageInfo[] = [
-  {
-    url: "https://sg-api.admin.webmanza.com/4571dbd0-2cd7-11ed-9717-00155d212c06/uploads/20_1680588807441-bookshopjpg.jpeg",
-    alt: "Bookshop Image",
-  },
-  // Add more images here if needed
-];
-
 export const BannerSection: React.FC = () => {
   const { theme_info } = useAppSelector(
     (state) => state.themeReducer.value.storeInfo

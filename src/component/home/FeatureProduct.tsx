@@ -14,34 +14,6 @@ interface ImageInfo {
   alt: string;
 }
 
-const products: ImageInfo[] = [
-  {
-    url: "https://bookshop.webmanza.com/_next/image?url=https%3A%2F%2Fapi.admin.webmanza.com%2Fassets%2Fproduct%2Fgallery%2F139_20_1660219743015_410453273_product_gallery.jpeg&w=640&q=75",
-    alt: "Bookshop Image",
-  },
-  {
-    url: "https://bookshop.webmanza.com/_next/image?url=https%3A%2F%2Fapi.admin.webmanza.com%2Fassets%2Fproduct%2Fgallery%2F139_20_1660219743015_410453273_product_gallery.jpeg&w=640&q=75",
-    alt: "Bookshop Image",
-  },
-  {
-    url: "https://bookshop.webmanza.com/_next/image?url=https%3A%2F%2Fapi.admin.webmanza.com%2Fassets%2Fproduct%2Fgallery%2F139_20_1660219743015_410453273_product_gallery.jpeg&w=640&q=75",
-    alt: "Bookshop Image",
-  },
-  {
-    url: "https://bookshop.webmanza.com/_next/image?url=https%3A%2F%2Fapi.admin.webmanza.com%2Fassets%2Fproduct%2Fgallery%2F139_20_1660219743015_410453273_product_gallery.jpeg&w=640&q=75",
-    alt: "Bookshop Image",
-  },
-  {
-    url: "https://bookshop.webmanza.com/_next/image?url=https%3A%2F%2Fapi.admin.webmanza.com%2Fassets%2Fproduct%2Fgallery%2F139_20_1660219743015_410453273_product_gallery.jpeg&w=640&q=75",
-    alt: "Bookshop Image",
-  },
-  {
-    url: "https://bookshop.webmanza.com/_next/image?url=https%3A%2F%2Fapi.admin.webmanza.com%2Fassets%2Fproduct%2Fgallery%2F139_20_1660219743015_410453273_product_gallery.jpeg&w=640&q=75",
-    alt: "Bookshop Image",
-  },
-  // Add more products here if needed
-];
-
 export const FeatureProduct = () => {
   const [activeTab, setActiveTab] = useState(1);
   const { products } = useAppSelector((state) => state.productReducer.value);
